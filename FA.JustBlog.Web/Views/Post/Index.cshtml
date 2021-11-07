@@ -1,0 +1,30 @@
+﻿@model PagedList.IPagedList<FA.JustBlog.ViewModels.Post.PostViewClientModel>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>All posts!</h2>
+<hr />
+@foreach (var item in Model)
+{
+    <div>
+        <h1 style="color:aqua;">
+            <a href="#">@item.Title</a>
+        </h1>
+        <p style="color:gray;">
+            Posted @item.PostedOn with @item.rate rate with @item.ViewCount view(s)
+        </p>
+        <p>
+            @item.PostContent
+        </p>
+    </div>
+    <hr />
+}
+<br />
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+

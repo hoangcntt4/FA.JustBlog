@@ -1,0 +1,6 @@
+C:\Users\ADMIN\source\repos\FA.JustBlog\FA.JustBlog.Commom\bin\Debug\FA.JustBlog.Commom.dll
+C:\Users\ADMIN\source\repos\FA.JustBlog\FA.JustBlog.Commom\bin\Debug\FA.JustBlog.Commom.pdb
+C:\Users\ADMIN\source\repos\FA.JustBlog\FA.JustBlog.Commom\obj\Debug\FA.JustBlog.Commom.csproj.AssemblyReference.cache
+C:\Users\ADMIN\source\repos\FA.JustBlog\FA.JustBlog.Commom\obj\Debug\FA.JustBlog.Commom.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\FA.JustBlog\FA.JustBlog.Commom\obj\Debug\FA.JustBlog.Commom.dll
+C:\Users\ADMIN\source\repos\FA.JustBlog\FA.JustBlog.Commom\obj\Debug\FA.JustBlog.Commom.pdb
