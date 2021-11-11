@@ -25,3 +25,31 @@ C:\Users\ADMIN\source\repos\FA.JustBlog\FA.JustBlog.Services\bin\Debug\System.Va
 C:\Users\ADMIN\source\repos\FA.JustBlog\FA.JustBlog.Services\bin\Debug\FA.JustBlog.Commom.pdb
 C:\Users\ADMIN\source\repos\FA.JustBlog\FA.JustBlog.Services\obj\Debug\FA.JustBlog.Services.dll
 C:\Users\ADMIN\source\repos\FA.JustBlog\FA.JustBlog.Services\obj\Debug\FA.JustBlog.Services.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\FA.JustBlog.Services.dll.config
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\FA.JustBlog.Services.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\FA.JustBlog.Services.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\AutoMapper.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\AutoMapper.EF6.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\DelegateDecompiler.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\DelegateDecompiler.EntityFramework.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\EntityFramework.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\FA.JustBlog.Commom.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\FA.JustBlog.Core.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\FA.JustBlog.ViewModels.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\Mono.Reflection.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\System.ValueTuple.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\FA.JustBlog.Commom.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\FA.JustBlog.Core.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\FA.JustBlog.Core.dll.config
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\FA.JustBlog.ViewModels.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\AutoMapper.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\AutoMapper.xml
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\EntityFramework.xml
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\bin\Debug\System.ValueTuple.xml
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\obj\Debug\FA.JustBlog.Services.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\obj\Debug\FA.JustBlog.Services.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\obj\Debug\FA.JustBlog.Services.csproj.CopyComplete
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\obj\Debug\FA.JustBlog.Services.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Services\obj\Debug\FA.JustBlog.Services.pdb

@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FA.JustBlog.Core.Respositories
+namespace FA.JustBlog.Core.Repositories
 {
-    public interface ICommentRespository: IGenericRepository<Comment>
+    public interface ICommentRepository: IGenericRepository<Comment>
     {
         IList<Comment> GetCommentsForPost(int postId);
         IList<Comment> GetCommentsForPost(Post post);

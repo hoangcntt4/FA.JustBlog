@@ -26,7 +26,7 @@ namespace FA.JustBlog.Services.Categories
             {
                 var category = Mapper.Map<Category>(request);
                 category.UrlSlug = SeoUrlHepler.FrientlyUrl(category.Name);
-                this.unitOfWork.CategoryRespository.Add(category);
+                this.unitOfWork.CategoryRepository.Add(category);
                 this.unitOfWork.SaveChange();
                 return new ResponseResult();
             }
@@ -40,7 +40,7 @@ namespace FA.JustBlog.Services.Categories
 
         public void Edit(Category category)
         {
-            this.unitOfWork.CategoryRespository.Update(category);
+            this.unitOfWork.CategoryRepository.Update(category);
             category.UrlSlug = SeoUrlHepler.FrientlyUrl(category.Name);
             category.UpdatedOn = DateTime.Now;
             this.unitOfWork.SaveChange();
@@ -49,14 +49,14 @@ namespace FA.JustBlog.Services.Categories
 
         public IEnumerable<CategoryViewModel> GetAll()
         {
-            var categories = this.unitOfWork.CategoryRespository.GetAll();
+            var categories = this.unitOfWork.CategoryRepository.GetAll();
             var categoryViewModels = Mapper.Map<IEnumerable<Category>, IEnumerable<CategoryViewModel>>(categories);
 
             return categoryViewModels;
         }
         public IEnumerable<CategoryDetail> GetAllDetail()
         {
-            var categories = this.unitOfWork.CategoryRespository.GetAll();
+            var categories = this.unitOfWork.CategoryRepository.GetAll();
             var categoryDetail = Mapper.Map<IEnumerable<Category>, IEnumerable<CategoryDetail>>(categories);
 
             return categoryDetail;
@@ -64,32 +64,32 @@ namespace FA.JustBlog.Services.Categories
 
         public Category GetToEdit(int id)
         {
-            var category = this.unitOfWork.CategoryRespository.GetAll().Where(c=>c.Id==id).FirstOrDefault();
+            var category = this.unitOfWork.CategoryRepository.GetAll().Where(c=>c.Id==id).FirstOrDefault();
             return category;
         }
 
         public void Remove(int id)
         {
-            var category = this.unitOfWork.CategoryRespository.GetAll().Where(c => c.Id == id).FirstOrDefault();
+            var category = this.unitOfWork.CategoryRepository.GetAll().Where(c => c.Id == id).FirstOrDefault();
 
-            this.unitOfWork.CategoryRespository.Delete(category);
+            this.unitOfWork.CategoryRepository.Delete(category);
             this.unitOfWork.SaveChange();
         }
         public IEnumerable<Category> All()
         {
-            var categies = this.unitOfWork.CategoryRespository.GetAll();
+            var categies = this.unitOfWork.CategoryRepository.GetAll();
 
             return categies;
         }
 
         public Category Find(int id)
         {
-            return this.unitOfWork.CategoryRespository.Find(c=>c.Id==id).FirstOrDefault();
+            return this.unitOfWork.CategoryRepository.Find(c=>c.Id==id).FirstOrDefault();
         }
 
         public int GetId(string name)
         {
-            var category = this.unitOfWork.CategoryRespository.Find(c=>c.Name==name).FirstOrDefault();
+            var category = this.unitOfWork.CategoryRepository.Find(c=>c.Name==name).FirstOrDefault();
             return category.Id;
         }
     }

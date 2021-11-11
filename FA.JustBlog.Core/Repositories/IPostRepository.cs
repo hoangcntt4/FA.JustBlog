@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FA.JustBlog.Core.Respositories
+namespace FA.JustBlog.Core.Repositories
 {
-    public interface IPostRespository:IGenericRepository<Post>
+    public interface IPostRepository:IGenericRepository<Post>
     {
         IList<Post> GetPublishedPosts();
         IList<Post> GetUnpublishedPosts();

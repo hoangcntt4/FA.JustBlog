@@ -1,6 +1,6 @@
 ﻿
 using FA.JustBlog.Core.Models;
-using FA.JustBlog.Core.Respositories;
+using FA.JustBlog.Core.Repositories;
 using System.Threading.Tasks;
 
 namespace FA.JustBlog.Core.Infrastructures
@@ -8,63 +8,63 @@ namespace FA.JustBlog.Core.Infrastructures
     public class UnitOfWork : IUnitOfWork
     {
         private readonly JustBlogContext context;
-        private ICategoryRespository categoryRespository;
-        private IPostRespository postRespository;
-        private ITagRespository tagRespository;
-        private ICommentRespository commentRespository;
+        private ICategoryRepository categoryRepository;
+        private IPostRepository postRepository;
+        private ITagRepository tagRepository;
+        private ICommentRepository commentRepository;
 
         public UnitOfWork(JustBlogContext context)
         {
             this.context = context;
         }
 
-        public ICategoryRespository CategoryRespository
+        public ICategoryRepository CategoryRepository
         {
             get
             {
-                if (this.categoryRespository == null)
+                if (this.categoryRepository == null)
                 {
-                    this.categoryRespository = new CategoryRepository(this.context);
+                    this.categoryRepository = new CategoryRepository(this.context);
                 }
-                return this.categoryRespository;
+                return this.categoryRepository;
             }
         }
 
-        public IPostRespository PostRespository
+        public IPostRepository PostRepository
         {
             get
             {
-                if (this.postRespository == null)
+                if (this.postRepository == null)
                 {
-                    this.postRespository = new PostRepository(this.context);
+                    this.postRepository = new PostRepository(this.context);
                 }
-                return this.postRespository;
+                return this.postRepository;
             }
         }
 
-        public ITagRespository TagRespository
+        public ITagRepository TagRepository
         {
             get
             {
-                if (this.tagRespository == null)
+                if (this.tagRepository == null)
                 {
-                    this.tagRespository = new TagRespository(this.context);
+                    this.tagRepository = new TagRepository(this.context);
                 }
-                return this.tagRespository;
+                return this.tagRepository;
             }
         }
 
         public JustBlogContext JustBlogContext => this.context;
 
-        public ICommentRespository CommentRespository
+        public ICommentRepository CommentRepository
         {
             get
             {
-                if (this.commentRespository == null)
+                if (this.commentRepository == null)
                 {
-                    this.commentRespository = new CommentRespository(this.context);
+                    this.commentRepository = new CommentRepository(this.context);
                 }
-                return this.commentRespository;
+                return this.commentRepository;
             }
         }
 

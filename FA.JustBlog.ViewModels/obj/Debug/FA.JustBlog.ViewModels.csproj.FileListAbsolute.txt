@@ -11,3 +11,17 @@ C:\Users\ADMIN\source\repos\FA.JustBlog\FA.JustBlog.ViewModels\bin\Debug\FA.Just
 C:\Users\ADMIN\source\repos\FA.JustBlog\FA.JustBlog.ViewModels\bin\Debug\FA.JustBlog.Core.dll.config
 C:\Users\ADMIN\source\repos\FA.JustBlog\FA.JustBlog.ViewModels\bin\Debug\EntityFramework.xml
 C:\Users\ADMIN\source\repos\FA.JustBlog\FA.JustBlog.ViewModels\bin\Debug\FA.JustBlog.Commom.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.ViewModels\bin\Debug\FA.JustBlog.ViewModels.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.ViewModels\bin\Debug\FA.JustBlog.ViewModels.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.ViewModels\bin\Debug\FA.JustBlog.Core.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.ViewModels\bin\Debug\EntityFramework.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.ViewModels\bin\Debug\FA.JustBlog.Commom.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.ViewModels\bin\Debug\FA.JustBlog.Core.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.ViewModels\bin\Debug\FA.JustBlog.Core.dll.config
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.ViewModels\bin\Debug\EntityFramework.xml
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.ViewModels\bin\Debug\FA.JustBlog.Commom.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.ViewModels\obj\Debug\FA.JustBlog.ViewModels.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.ViewModels\obj\Debug\FA.JustBlog.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.ViewModels\obj\Debug\FA.JustBlog.ViewModels.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.ViewModels\obj\Debug\FA.JustBlog.ViewModels.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.ViewModels\obj\Debug\FA.JustBlog.ViewModels.csproj.CopyComplete

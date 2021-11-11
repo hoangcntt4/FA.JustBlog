@@ -27,7 +27,7 @@ namespace FA.JustBlog.Services.Tags
             {
                 var tag = Mapper.Map<Tag>(request);
                 tag.UrlSlug = SeoUrlHepler.FrientlyUrl(tag.Name);
-                this.unitOfWork.TagRespository.Add(tag);
+                this.unitOfWork.TagRepository.Add(tag);
                 this.unitOfWork.SaveChange();
                 return new ResponseResult();
             }
@@ -40,7 +40,7 @@ namespace FA.JustBlog.Services.Tags
 
         public Tag Find(int id)
         {
-            return this.unitOfWork.TagRespository.Find(t => t.Id == id).FirstOrDefault();
+            return this.unitOfWork.TagRepository.Find(t => t.Id == id).FirstOrDefault();
         }
 
         public IEnumerable<CreateTagViewModel> GetAll()
@@ -50,24 +50,24 @@ namespace FA.JustBlog.Services.Tags
 
         public void Remove(int id)
         {
-            var tag = this.unitOfWork.TagRespository.Find(t => t.Id == id).FirstOrDefault();
-            this.unitOfWork.TagRespository.Delete(tag);
+            var tag = this.unitOfWork.TagRepository.Find(t => t.Id == id).FirstOrDefault();
+            this.unitOfWork.TagRepository.Delete(tag);
             this.unitOfWork.SaveChange();
         }
         public IEnumerable<CreateTagViewAdminModel> GetAllForAdmin()
         {
-            var tags = this.unitOfWork.TagRespository.GetAll();
+            var tags = this.unitOfWork.TagRepository.GetAll();
             var tagViewModels = Mapper.Map<IEnumerable<Tag>, IEnumerable<CreateTagViewAdminModel>>(tags);
             return tagViewModels;
         }
         public Tag GotoEdit(int id)
         {
-            return this.unitOfWork.TagRespository.Find(t => t.Id == id).FirstOrDefault();
+            return this.unitOfWork.TagRepository.Find(t => t.Id == id).FirstOrDefault();
         }
 
         public void Edit(Tag tag)
         {
-            this.unitOfWork.TagRespository.Update(tag);
+            this.unitOfWork.TagRepository.Update(tag);
             tag.UrlSlug = SeoUrlHepler.FrientlyUrl(tag.Name);
             tag.UpdatedOn = DateTime.Now;
             this.unitOfWork.SaveChange();

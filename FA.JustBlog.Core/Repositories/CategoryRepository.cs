@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FA.JustBlog.Core.Respositories
+namespace FA.JustBlog.Core.Repositories
 {
-    class CategoryRepository: GenericRepository<Category>,ICategoryRespository
+    class CategoryRepository: GenericRepository<Category>,ICategoryRepository
     {
         public CategoryRepository(JustBlogContext context) : base(context)
         {

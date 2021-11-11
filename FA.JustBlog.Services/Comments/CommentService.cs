@@ -25,7 +25,7 @@ namespace FA.JustBlog.Services.Comments
             {
                 var comment = Mapper.Map<Comment>(request);
                 comment.CommentTime = DateTime.Now;
-                this.unitOfWork.CommentRespository.Add(comment);
+                this.unitOfWork.CommentRepository.Add(comment);
                 this.unitOfWork.SaveChange();
                 return new ResponseResult();
             }
@@ -38,30 +38,30 @@ namespace FA.JustBlog.Services.Comments
 
         public void Edit(Comment comment)
         {
-            this.unitOfWork.CommentRespository.Update(comment);
+            this.unitOfWork.CommentRepository.Update(comment);
             comment.UpdatedOn = DateTime.Now;
             this.unitOfWork.SaveChange();
         }
 
         public Comment Find(int id)
         {
-            return this.unitOfWork.CommentRespository.Find(c=>c.Id==id).FirstOrDefault();
+            return this.unitOfWork.CommentRepository.Find(c=>c.Id==id).FirstOrDefault();
         }
 
         public Comment GoToEdit(int id)
         {
-            return this.unitOfWork.CommentRespository.Find(c => c.Id == id).FirstOrDefault();
+            return this.unitOfWork.CommentRepository.Find(c => c.Id == id).FirstOrDefault();
         }
 
         public void Remove(int id)
         {
-            var comment= this.unitOfWork.CommentRespository.Find(c => c.Id == id).FirstOrDefault();
-            this.unitOfWork.CommentRespository.Delete(comment);
+            var comment= this.unitOfWork.CommentRepository.Find(c => c.Id == id).FirstOrDefault();
+            this.unitOfWork.CommentRepository.Delete(comment);
             this.unitOfWork.SaveChange();
         }
         public IEnumerable<CommentViewAdmin> GetAllForAdmin()
         {
-            var comments = this.unitOfWork.CommentRespository.GetAll();
+            var comments = this.unitOfWork.CommentRepository.GetAll();
             var commentViewModels = Mapper.Map<IEnumerable<Comment>, IEnumerable<CommentViewAdmin>>(comments);
 
             return commentViewModels;

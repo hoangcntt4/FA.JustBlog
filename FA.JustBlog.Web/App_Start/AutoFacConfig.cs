@@ -3,7 +3,7 @@ using Autofac.Integration.Mvc;
 using Autofac.Integration.WebApi;
 using FA.JustBlog.Core.Infrastructures;
 using FA.JustBlog.Core.Models;
-using FA.JustBlog.Core.Respositories;
+using FA.JustBlog.Core.Repositories;
 using FA.JustBlog.Services.Posts;
 using System;
 using System.Collections.Generic;

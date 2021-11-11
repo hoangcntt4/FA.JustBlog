@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FA.JustBlog.Core.Respositories
+namespace FA.JustBlog.Core.Repositories
 {
-    public class PostRepository : GenericRepository<Post>, IPostRespository
+    public class PostRepository : GenericRepository<Post>, IPostRepository
     {
         public PostRepository(JustBlogContext context) : base(context)
         {

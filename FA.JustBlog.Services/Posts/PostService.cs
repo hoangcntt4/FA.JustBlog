@@ -26,7 +26,7 @@ namespace FA.JustBlog.Services.Posts
             try
             {
                 //1. add tag vao database
-                var tagIds = this.unitOfWork.TagRespository.AddTagByString(request.Tags);
+                var tagIds = this.unitOfWork.TagRepository.AddTagByString(request.Tags);
                 // 2. create postTag
                 var postTags = new List<PostTagMap>();
                 foreach (var tagId in tagIds)
@@ -49,7 +49,7 @@ namespace FA.JustBlog.Services.Posts
                     ShortDescription = request.ShortDescription,
                     PostTagMaps=postTags
                 };
-                this.unitOfWork.PostRespository.Add(post);
+                this.unitOfWork.PostRepository.Add(post);
                 this.unitOfWork.SaveChange();
                 return new ResponseResult();
 
@@ -64,7 +64,7 @@ namespace FA.JustBlog.Services.Posts
 
         public IEnumerable<PostViewClientModel> GetAll()
         {
-            var posts = this.unitOfWork.PostRespository.GetAll();
+            var posts = this.unitOfWork.PostRepository.GetAll();
             var postViewModels = Mapper.Map<IEnumerable<Post>, IEnumerable<PostViewClientModel>>(posts);
 
             return postViewModels;
@@ -72,7 +72,7 @@ namespace FA.JustBlog.Services.Posts
 
         public IEnumerable<PostViewModel> GetAllForAdmin()
         {
-            var posts = this.unitOfWork.PostRespository.GetAll();
+            var posts = this.unitOfWork.PostRepository.GetAll();
             var postViewModels = Mapper.Map<IEnumerable<Post>, IEnumerable<PostViewModel>>(posts);
 
             return postViewModels;
@@ -80,21 +80,21 @@ namespace FA.JustBlog.Services.Posts
 
         public Post Find(int id)
         {
-            return this.unitOfWork.PostRespository.Find(p => p.Id == id).FirstOrDefault();
+            return this.unitOfWork.PostRepository.Find(p => p.Id == id).FirstOrDefault();
 
         }
 
         public void Remove(int id)
         {
-            var post = this.unitOfWork.PostRespository.Find(p => p.Id == id).FirstOrDefault();
-            this.unitOfWork.PostRespository.Delete(post);
+            var post = this.unitOfWork.PostRepository.Find(p => p.Id == id).FirstOrDefault();
+            this.unitOfWork.PostRepository.Delete(post);
             this.unitOfWork.SaveChange();
 
         }
 
         public void Edit(Post post)
         {
-            this.unitOfWork.PostRespository.Update(post);
+            this.unitOfWork.PostRepository.Update(post);
             post.UrlSlug = SeoUrlHepler.FrientlyUrl(post.Title);
             post.UpdatedOn = DateTime.Now;
             this.unitOfWork.SaveChange();
@@ -102,33 +102,33 @@ namespace FA.JustBlog.Services.Posts
 
         public Post GoToEdit(int id)
         {
-            return this.unitOfWork.PostRespository.Find(p => p.Id == id).FirstOrDefault();
+            return this.unitOfWork.PostRepository.Find(p => p.Id == id).FirstOrDefault();
         }
 
         public IEnumerable<DropListPost> GetDopList()
         {
-            var posts = this.unitOfWork.PostRespository.GetAll();
+            var posts = this.unitOfWork.PostRepository.GetAll();
             var DropListPost = Mapper.Map<IEnumerable<Post>, IEnumerable<DropListPost>>(posts);
             return DropListPost;
         }
 
         public IEnumerable<PostViewClientModel> LastestPost()
         {
-            var posts = this.unitOfWork.PostRespository.GetAll().OrderByDescending(p => p.PostedOn).Take(5);
+            var posts = this.unitOfWork.PostRepository.GetAll().OrderByDescending(p => p.PostedOn).Take(5);
             var postViewModels = Mapper.Map<IEnumerable<Post>, IEnumerable<PostViewClientModel>>(posts);
             return postViewModels;
         }
 
         public IEnumerable<PostViewClientModel> MostViewedPosts()
         {
-            var posts = this.unitOfWork.PostRespository.GetAll().OrderByDescending(p => p.ViewCount).Take(5);
+            var posts = this.unitOfWork.PostRepository.GetAll().OrderByDescending(p => p.ViewCount).Take(5);
             var postViewModels = Mapper.Map<IEnumerable<Post>, IEnumerable<PostViewClientModel>>(posts);
             return postViewModels;
         }
 
         public IEnumerable<PostViewClientModel> GetPostFromCategory(int categoryId)
         {
-            var posts = this.unitOfWork.PostRespository.GetAll().Where(p => p.CategoryId == categoryId);
+            var posts = this.unitOfWork.PostRepository.GetAll().Where(p => p.CategoryId == categoryId);
             return Mapper.Map<IEnumerable<Post>, IEnumerable<PostViewClientModel>>(posts);
 
         }

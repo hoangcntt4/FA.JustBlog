@@ -1,6 +1,6 @@
 ﻿
 using FA.JustBlog.Core.Models;
-using FA.JustBlog.Core.Respositories;
+using FA.JustBlog.Core.Repositories;
 using System;
 using System.Threading.Tasks;
 
@@ -9,10 +9,10 @@ namespace FA.JustBlog.Core.Infrastructures
     public interface IUnitOfWork : IDisposable
     {
 
-        ICategoryRespository CategoryRespository { get; }
-        IPostRespository PostRespository { get; }
-        ITagRespository TagRespository { get; }
-        ICommentRespository CommentRespository { get; }
+        ICategoryRepository CategoryRepository { get; }
+        IPostRepository PostRepository { get; }
+        ITagRepository TagRepository { get; }
+        ICommentRepository CommentRepository { get; }
 
         JustBlogContext JustBlogContext { get; }
 

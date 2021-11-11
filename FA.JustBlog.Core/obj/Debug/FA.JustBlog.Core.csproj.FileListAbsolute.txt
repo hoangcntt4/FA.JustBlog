@@ -15,3 +15,20 @@ C:\Users\ADMIN\source\repos\FA.JustBlog\FA.JustBlog.Core\obj\Debug\FA.JustBlog.C
 C:\Users\ADMIN\source\repos\FA.JustBlog\FA.JustBlog.Core\obj\Debug\FA.JustBlog.Core.Migrations.alterTable.resources
 C:\Users\ADMIN\source\repos\FA.JustBlog\FA.JustBlog.Core\bin\Debug\FA.JustBlog.Commom.dll
 C:\Users\ADMIN\source\repos\FA.JustBlog\FA.JustBlog.Core\bin\Debug\FA.JustBlog.Commom.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Core\bin\Debug\FA.JustBlog.Core.dll.config
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Core\bin\Debug\FA.JustBlog.Core.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Core\bin\Debug\FA.JustBlog.Core.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Core\bin\Debug\EntityFramework.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Core\bin\Debug\FA.JustBlog.Commom.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Core\bin\Debug\FA.JustBlog.Commom.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Core\bin\Debug\EntityFramework.xml
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Core\obj\Debug\FA.JustBlog.Core.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Core\obj\Debug\FA.JustBlog.Core.Migrations.Initial.resources
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Core\obj\Debug\FA.JustBlog.Core.Migrations.UpdatePostAndCreateComment.resources
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Core\obj\Debug\FA.JustBlog.Core.Migrations.alterTable.resources
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Core\obj\Debug\FA.JustBlog.Core.csproj.GenerateResource.cache
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Core\obj\Debug\FA.JustBlog.Core.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Core\obj\Debug\FA.JustBlog.Core.dll
+C:\Users\ADMIN\OneDrive\Máy tính\JustBlog\FA.JustBlog\FA.JustBlog.Core\obj\Debug\FA.JustBlog.Core.pdb

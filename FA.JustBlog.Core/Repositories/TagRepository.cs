@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FA.JustBlog.Core.Respositories
+namespace FA.JustBlog.Core.Repositories
 {
-    public class TagRespository: GenericRepository<Tag>,ITagRespository
+    public class TagRepository: GenericRepository<Tag>,ITagRepository
     {
-        public TagRespository(JustBlogContext context):base(context)
+        public TagRepository(JustBlogContext context):base(context)
         {
 
         }

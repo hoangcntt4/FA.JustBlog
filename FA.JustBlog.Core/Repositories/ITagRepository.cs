@@ -2,9 +2,9 @@
 using FA.JustBlog.Core.Models;
 using System.Collections.Generic;
 
-namespace FA.JustBlog.Core.Respositories
+namespace FA.JustBlog.Core.Repositories
 {
-    public interface ITagRespository : IGenericRepository<Tag>
+    public interface ITagRepository : IGenericRepository<Tag>
     {
         Tag GetTagByUrlSlug(string urlSlug);
         IEnumerable<int> AddTagByString(string tags);
